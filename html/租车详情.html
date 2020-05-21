@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="res/lib/placeChoose/address.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/index.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/eco.css">
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="res/lib/bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="res/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="res/lib/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="res/lib/placeChoose/address.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=D4739134efb9184fccbaec0ecf825c15"></script>
+    <script src="res/js/index.js"></script>
+    <title>电商html</title>
+</head>
+<body>
+    <div class="wraper bgc">
+        <div class="kts_index_header">
+            <div class="container_new">
+                <p>
+                    <a href="注册页面.html" class="kts_register">注册</a>
+                    <a href="登录页面.html" class="kts_login">登录</a>
+                </p>
+                <div class="kts_menu">
+                    <i></i>
+                    <a href="index.html" class="kts_menu_item0 ts "></a>
+                    <a href="门票列表.html" class="kts_menu_item1 ts"></a>
+                    <a href="酒店列表.html" class="kts_menu_item2 ts"></a>
+                    <a href="自由行列表.html" class="kts_menu_item3 ts"></a>
+                    <a href="租车列表.html" class="kts_menu_item4 ts active" ></a>
+                    <a href="餐饮列表.html" class="kts_menu_item5 ts"></a>
+                    <a href="特产列表.html" class="kts_menu_item6 ts"></a>
+                    <a href="娱乐列表.html" class="kts_menu_item7 ts"></a>
+                    <a href="#" class="kts_menu_item8 ts"></a>
+                </div>
+            </div>
+        </div>
+        <div class="foodInfo">
+            <div class="container">
+                <div class="mbxBox">
+                    您所在的位置：
+                    <a href="#">首页</a>
+                    <em>&gt;</em>
+                    <a href="#">租车</a>
+                    <em>&gt;</em>
+                    <span>庄浪自驾游快捷租车</span>
+                </div>
+                <div class="topBigBox">
+                    <div class="slide">
+                        <ul class="bigImg">
+                            <li>
+                                <img src="res/img/timg.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/timg.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/timg.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/timg.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/timg.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/timg.png" />
+                            </li>
+                        </ul>
+                        <div class="smallScroll">
+                            <a class="sPrev" href="javascript:void(0)"></a>
+                            <div class="smallImg">
+                                <ul>
+                                    <li><a><img src="res/img/timg.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/timg.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/timg.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/timg.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/timg.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/timg.png" /></a><i></i></li>
+                                </ul>
+                            </div>
+                            <a class="sNext" href="javascript:void(0)"></a>
+                        </div>
+                        <div class="pageState"></div>
+                    </div>
+                    <div class="content">
+                        <div class="video-mon-ney">
+                            <span>¥400.0<em>起</em></span>
+                            <p class="w-b">随时有客服进行联系、互动</p>
+                        </div>
+                        <h1>庄浪自驾游快捷租车</h1>
+                        <div class="view-info-txt" style="padding-top: 10px;">
+                            <p>租车地址<span>甘肃省庄浪县永盛汽贸</span></p>
+                            <p>联系人<span>史先生</span></p>
+                            <p>联系电话<span>18894010504</span></p>
+                        </div>
+                        <div class="star-cont-ainer">
+                            <span class="star-box">
+                                <i class="active"></i>
+                                <i class="active"></i>
+                                <i class="active"></i>
+                                <i></i>
+                                <i></i>
+                            </span>
+                            <span class="frac-tion"><em>3.9</em>/5分</span>
+                            <a class="ts" href="#">查看91条评论</a>
+                        </div>
+                        <div class="com-ment-txt">
+                            <span class="lable-point"></span>
+                            <p>甘肃省酒泉市敦煌市西南18公里处的大漠戈壁滩甘肃省酒泉市敦煌市西南18公里处的大漠戈壁滩甘肃省酒泉市敦煌市西南18公里处的大漠戈壁滩甘肃省酒泉市敦煌市西南18公里处的大漠戈壁滩</p>
+                            <div class="time">
+                                <span>2018-04-17</span>
+                                <em><i></i>撕蒂疯·哭里</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="door-ticket-info">
+                    <div class="door-title">
+                        <h4>门票</h4>
+                    </div>
+                    <div class="tic-info-wrap">
+                        <dl class="fn-clear">
+                            <dt></dt>
+                            <dt class="name">名称</dt>
+                            <dt class="time">提前预订时间</dt>
+                            <dt>市场价</dt>
+                            <dt>平台价</dt>
+                            <dt>支付方式</dt>
+                            <dt></dt>
+                        </dl>
+                        <dl class="fn-clear">
+                            <dt class="people">类别</dt>
+                            <dd class="name">
+                                <p>[车型]</p>
+                                <div class="vid-contain fn-clear">
+                                    <span class="vid-ran ts"><em>奥迪A6L自动挡（带司机）</em></span>
+                                   
+                                    <ul class="vid-bomb-box">
+                                        <li>
+                                            <div class="poin-ter"><p></p></div>
+                                            <p>
+                                                <span>更改或取消订单须知</span>
+                                                <em>1.产品未使用、未过期，提前24小时可退款、可改签（限改1次）
+                                                    2.产品一经售出，使用日期前24小时内不可退改。
+                                                </em>
+                                            </p>
+                                            <p>
+                                                <span>购买须知</span>
+                                                <em>1、到店所付费用为租金费用
+                                                    2、产品只限当日使用，次日无效，拍单前请与客服确认，未经确认拍单，视为无效订单；
+                                                    3、拍此产品用户需在“备注”中备注以下信息：租车时间、租车人姓名、身份证、联系电话
+                                                    4、详细租车规则，现场提车时以合同为准。
+                                                    5、如需开发票，快递费用自理，到付！
+                                                </em>
+                                            </p>
+                                            <p>
+                                                <span>取还车说明</span>
+                                                <em>油：
+                                                    租赁用车均不含油，还车时油量不得少于交车时油量；
+                                                    备注：每天限行350公里，不含行程中的所有费用，超过每公里按3元/公路收费，超时按每小时100元计算。
+                                                    租车时间：
+                                                    车辆运营时间：8:00—18:00最晚归还时间18:00（当日归还如有延迟请先打电话联系）
+                                                    预订电话：0933—8353511
+                                                    归还电话：成功&nbsp; 18693331314 &nbsp;&nbsp;&nbsp;&nbsp;186933321314
+                                                </em>
+                                            </p>
+                                            <div class="close-bomb"><b>收起</b></div>
+                                        </li>
+                                        <li class="calender-container-wraper">
+                                            <div class="poin-ter active"><p></p></div>
+                                            <div class="date-calen-dar fn-clear ticket-cale-dar">
+                                                <span class="calen-dar-btn ts"></span>
+                                                <table border="1">
+                                                    <tr>
+                                                        <td colspan="7" class="year-number">2017年3月</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="week">日</th>
+                                                        <th>一</th>
+                                                        <th>二</th>
+                                                        <th>三</th>
+                                                        <th>四</th>
+                                                        <th>五</th>
+                                                        <th class="week">六</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="active">1<p>¥123</p></td>
+                                                        <td class="active">2<p>¥123</p></td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td class="active">6<p>¥123</p></td>
+                                                        <td class="active">7<p>¥123</p></td>
+                                                        <td class="active">8<p>¥123</p></td>
+                                                        <td class="active">9<p>¥123</p></td>
+                                                        <td class="active">10<p>¥123</p></td>
+                                                        <td class="active">11<p>¥123</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12</td>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19</td>
+                                                        <td>20</td>
+                                                        <td>21</td>
+                                                        <td>22</td>
+                                                        <td>23</td>
+                                                        <td>24</td>
+                                                        <td>25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>26</td>
+                                                        <td>27</td>
+                                                        <td>28</td>
+                                                        <td>29</td>
+                                                        <td>30</td>
+                                                        <td>31</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                                <table border="1">
+                                                    <tr>
+                                                        <td colspan="7" class="year-number">2017年3月</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="week">日</th>
+                                                        <th>一</th>
+                                                        <th>二</th>
+                                                        <th>三</th>
+                                                        <th>四</th>
+                                                        <th>五</th>
+                                                        <th class="week">六</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="active">1<p>¥123</p></td>
+                                                        <td class="active">2<p>¥123</p></td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td class="active">6<p>¥123</p></td>
+                                                        <td class="active">7<p>¥123</p></td>
+                                                        <td class="active">8<p>¥123</p></td>
+                                                        <td class="active">9<p>¥123</p></td>
+                                                        <td class="active">10<p>¥123</p></td>
+                                                        <td class="active">11<p>¥123</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12</td>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19</td>
+                                                        <td>20</td>
+                                                        <td>21</td>
+                                                        <td>22</td>
+                                                        <td>23</td>
+                                                        <td>24</td>
+                                                        <td>25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>26</td>
+                                                        <td>27</td>
+                                                        <td>28</td>
+                                                        <td>29</td>
+                                                        <td>30</td>
+                                                        <td>31</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="close-bomb"><b>收起</b></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dd>
+                            <dd class="time">当天16：00前</dd>
+                            <dd><s>¥40</s></dd>
+                            <dd class="price">¥400.0</dd>
+                            <dd>在线支付</dd>
+                            <dd><a class="yd-btn ts" href="#">预订</a></dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="contentBox">
+                    <div class="slide">
+                        <a href="#" class="adPic" style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></a>
+                        <a href="#" class="adPic" style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></a>
+                    </div>
+                    <div class="main apiao">
+                        <div class="genreNav">
+                            <p>
+                                <span>
+                                    <a href="#" class="active">其他团购</a>
+                                    <a href="#">购买需知</a>
+                                    <a href="#">本单详情</a>
+                                    <a href="#">商家介绍</a>
+                                    <a href="#">消费评价</a>
+                                    <a href="#" class="now-paly ts">立即预订</a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="centerBigBox">
+                            <div class="areaBlock">
+                                <h1><i></i>预订须知</h1>
+                                <div class="knows">
+                                    <p>优待政策</p>
+                                    <p>2、使用时间：11:00-21:00</p>
+                                    <p>3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                                    <p>4、限购限用提醒：每张团券建议2人使用</p>
+                                </div>
+                                <div class="knows">
+                                    <p>温馨提示</p>
+                                    <p>2、使用时间：11:00-21:00</p>
+                                    <p>3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                                    <p>4、限购限用提醒：每张团券建议2人使用</p>
+                                    <p>8、商家服务：提供免费WiFi</p>
+                                </div>
+                                <div class="knows">
+                                    <p>安全指南</p>
+                                    <p>预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位</p>
+                                </div>
+                            </div>
+                            <div class="areaBlock">
+                                <h1><i></i>景点简介</h1>
+                                <div class="priceTable">
+                                    <ul class="view-intro-tab">
+                                        <li>
+                                            <span>特色1</span>
+                                            <p>中国西部建筑艺术的博物馆</p>
+                                        </li>
+                                        <li>
+                                            <span>特色2</span>
+                                            <p>中国西部建筑艺术的博物馆</p>
+                                        </li>
+                                        <li>
+                                            <span>特色3</span>
+                                            <p>中国西部建筑艺术的博物馆</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="picShow">
+                                    <p>景区景点介绍海淀区巴沟路2号北京华联万柳购物中心海淀区巴沟路2号北京华联万柳购物中心海淀区巴沟路2号北京华联万柳购物中心海淀区巴沟路2号北京华联万柳购物中心海淀区巴沟路2号北京华联万柳购物中心</p>
+                                    <i style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></i>
+                                    <i style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></i>
+                                </div>
+                            </div>
+                            <div class="areaBlock">
+                                <h1><i></i>交通指南</h1>
+                                <div class="mapBox0">
+                                    <div class="traffic-guide" id="traffic-guide"></div>
+                                    <div class="traff-ictxt">
+                                        <h5>交通信息</h5>
+                                        <div class="text-show">
+                                            <p><span>自驾线路：</span><em>景区景点介绍海淀区巴沟路2号北京华联万柳购物中心</em></p>
+                                            <p><span>公共线路：</span><em>景区景点介绍海淀区巴沟路2号北京华联万柳购物中心</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="areaBlock">
+                                <h1><i></i>用户评价</h1>
+                                <div class="commentBox">
+                                    <div class="commentNav">
+                                        <a href="#" class="active">全部（1830）</a>
+                                        <a href="#">好评（1701）</a>
+                                        <a href="#">中评（105）</a>
+                                        <a href="#">差评（24）</a>
+                                        <a href="#">取票方便（466）</a>
+                                        <a href="#">便宜（228）</a>
+                                        <a href="#">服务好（199）</a>
+                                    </div>
+                                    <div class="commentMain">
+                                        <ul>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2018-04-17</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2018-04-17</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2018-04-17</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2018-04-17</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2018-04-17</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/timg.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="pageBox">
+                                            <a href="javascript:void(0);" class="prevBtn">上一页<i></i></a>
+                                            <a href="javascript:void(0);">1</a>
+                                            <a href="javascript:void(0);" class="active">2</a>
+                                            <a href="javascript:void(0);">3</a>
+                                            <a href="javascript:void(0);">4</a>
+                                            <a href="javascript:void(0);">6</a>
+                                            <a href="javascript:void(0);">7</a>
+                                            <a href="javascript:void(0);">8</a>
+                                            <span>...</span>
+                                            <a href="javascript:void(0);">12</a>
+                                            <a href="javascript:void(0);" class="nextBtn">下一页<i></i></a>
+                                            <p>到<input type="text" value="7">页</p>
+                                            <a href="javascript:void(0);" class="submitBtn">确定</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="ours">
+                <div class="container">
+                    <div class="oursItem">
+                        <h2>关于我们</h2>
+                        <p>
+                            <a href="">公司简介</a>
+                            <i></i>
+                            <a href="#">崆通天下旅游护照</a>
+                        </p>
+                        <p>
+                            <a href="">联系我们</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>网站条款</h2>
+                        <p>
+                            <a href="">版权声明</a>
+                            <i></i>
+                            <a href="">会员预知</a>
+                        </p>
+                        <p>
+                            <a href="">免责声明</a>
+                            <i></i>
+                            <a href="">加盟须知</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>加盟合作</h2>
+                        <p>
+                            <a href="">分销联盟</a>
+                            <i></i>
+                            <a href="">代理合作</a>
+                        </p>
+                        <p>
+                            <a href="">保险代理</a>
+                            <i></i>
+                            <a href="">加盟服务</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>商家服务</h2>
+                        <p>
+                            <a href="">广告业务</a>
+                            <i></i>
+                            <a href="">商家入驻</a>
+                        </p>
+                        <p>
+                            <a href="">商家帮助</a>
+                            <i></i>
+                            <a href="">服务说明</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="container">
+                    <h2>友情链接</h2>
+                    <p>
+                        <a href="#">国家旅游局</a><i>|</i>
+                        <a href="#">甘肃旅游网</a><i>|</i>
+                        <a href="#">兰州旅游网</a><i>|</i>
+                        <a href="#">崆峒山旅游网</a><i>|</i>
+                        <a href="#">康县旅游网</a><i>|</i>
+                        <a href="#">临夏市旅游局</a><i>|</i>
+                        <a href="#">庆阳市旅游局</a><i>|</i>
+                        <a href="#">天水市旅游局</a><i>|</i>
+                        <a href="#">甘南市旅游局</a><i>|</i>
+                        <a href="#">陇南市旅游局</a><i>|</i>
+                        <a href="#">张掖市旅游局</a><i>|</i>
+                        <a href="#">嘉峪关旅游局</a><i>|</i>
+                        <a href="#">敦煌旅游局</a><i>|</i>
+                        <a href="#">平凉旅游局</a><i>|</i>
+                    </p>
+                    <span>陇ICP备05001007号-1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        jQuery(".topBigBox .slide").slide({
+            titCell:".smallImg li",
+            mainCell:".bigImg",
+            effect:"fold",
+            startFun:function(i,p){
+                if(i==0){
+                    jQuery(".topBigBox .sPrev").click()
+                } else if( i%5==0 ){
+                    jQuery(".topBigBox .sNext").click()
+                }
+            }
+        });
+        jQuery(".topBigBox .smallScroll").slide({
+            mainCell:"ul",
+            vis:5,
+            scroll:5,
+            effect:"left",
+            autoPage:true,
+            prevCell:".sPrev",
+            nextCell:".sNext",
+            pnLoop:false
+        });
+
+        $(function () {
+            offsetFun();
+        });
+
+        var map = new BMap.Map("traffic-guide");
+        map.centerAndZoom(new BMap.Point(106.039294,35.200585), 12);
+        var navigationControl = new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            type: BMAP_NAVIGATION_CONTROL_LARGE,
+            enableGeolocation: true
+        });
+        map.addControl(navigationControl);
+
+        function ComplexCustomOverlay1(point, title, address) {
+            this._point = point;
+            this._title = title;
+            this._address = address;
+        }
+        ComplexCustomOverlay1.prototype = new BMap.Overlay();
+        ComplexCustomOverlay1.prototype.initialize = function(map) {
+            this._map = map;
+            var wrap = this._wrap = document.createElement("div");
+            wrap.className = "position-wrap";
+
+            var box = document.createElement("div");
+            box.className = "view-tra-ffic";
+            wrap.appendChild(box);
+
+            var sj= document.createElement("span");
+            sj.className = "tra-big-sj";
+            box.appendChild(sj);
+
+            var ssj= document.createElement("em");
+            ssj.className = "tra-small-sj";
+            sj.appendChild(ssj);
+
+            var name = document.createElement("p");
+            name.className = "tra-ffic-name";
+            name.appendChild(document.createTextNode(this._title));
+            box.appendChild(name);
+
+            var span = document.createElement("span");
+            span.className = "close-ffic-map ts";
+            span.appendChild(document.createTextNode("X"));
+            name.appendChild(span);
+
+            span.addEventListener("click", function() {
+                wrap.remove();
+            });
+
+            var address = document.createElement("p");
+            address.className = "tra-ffic-address";
+            address.appendChild(document.createTextNode(this._address));
+            box.appendChild(address);
+
+            var query = document.createElement("a");
+            query.className = "tra-ffic-query ts";
+            query.appendChild(document.createTextNode("查询线路"));
+            box.appendChild(query);
+
+            map.getPanes().labelPane.appendChild(wrap);
+            return wrap;
+        };
+        ComplexCustomOverlay1.prototype.draw = function() {
+            var map = this._map;
+            var pixel = map.pointToOverlayPixel(this._point);
+            this._wrap.style.left = pixel.x - 143 + "px";
+            this._wrap.style.top = pixel.y - 140 + "px";
+        };
+
+        function addPoint1(lon, lat, title, address) {
+            var pt = new BMap.Point(lon, lat);
+            var myIcon = new BMap.Icon("res/img/icon_07.png", new BMap.Size(30, 39));
+            var marker = new BMap.Marker(pt, {
+                icon: myIcon
+            });
+            map.addOverlay(marker);
+
+            marker.addEventListener("click", function() {
+                $(".position-wrap").remove();
+                var myCompOverlay = new ComplexCustomOverlay1(pt, title,address);
+                map.addOverlay(myCompOverlay);
+            });
+
+        }
+        var data = [{
+            "lon": "103.885855",
+            "lat": "36.060289",
+            "title": "庄浪自驾游快捷租车",
+            "address": "甘肃省酒泉市敦煌市西南18公里处的大漠戈壁滩"
+        },{
+            "lon": "103.780901",
+            "lat": "36.07618",
+            "title": "庄浪自驾游快捷租车2",
+            "address": "甘肃省酒泉市敦煌市西南18公"
+        }]
+
+        for (var i = 0; i < data.length; i++) {
+            addPoint1(data[i].lon, data[i].lat, data[i].title, data[i].address);
+        }
+
+    </script>
+</body>
+</html>

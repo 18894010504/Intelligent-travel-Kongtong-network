@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="res/lib/placeChoose/address.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/index.css">
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="res/lib/bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="res/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="res/lib/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="res/lib/scrollex/jquery.scrollex.min.js"></script>
+    <script src="res/lib/placeChoose/address.js"></script>
+    <script src="res/lib/calendar/yui.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=D4739134efb9184fccbaec0ecf825c15"></script>
+    <script src="res/js/index.js"></script>
+    <title>自行游详情</title>
+</head>
+<body>
+    <div class="wraper bgc">
+        <div class="kts_index_header">
+            <div class="container_new">
+                <p>
+                    <a href="注册页面.html" class="kts_register">注册</a>
+                    <a href="登录页面.html" class="kts_login">登录</a>
+                </p>
+                <div class="kts_menu">
+                    <i></i>
+                    <a href="index.html" class="kts_menu_item0 ts "></a>
+                    <a href="门票列表.html" class="kts_menu_item1 ts"></a>
+                    <a href="酒店列表.html" class="kts_menu_item2 ts"></a>
+                    <a href="自由行列表.html" class="kts_menu_item3 ts active"></a>
+                    <a href="租车列表.html" class="kts_menu_item4 ts"></a>
+                    <a href="餐饮列表.html" class="kts_menu_item5 ts"></a>
+                    <a href="特产列表.html" class="kts_menu_item6 ts"></a>
+                    <a href="娱乐列表.html" class="kts_menu_item7 ts"></a>
+                    <a href="#" class="kts_menu_item8 ts"></a>
+                </div>
+            </div>
+        </div>
+        <div class="foodInfo">
+            <div class="container">
+                <div class="mbxBox">
+                    您所在的位置：
+                    <a href="#">首页</a>
+                    <em>&gt;</em>
+                    <a href="#">自由行</a>
+                    <em>&gt;</em>
+                    <span>崆峒山旅游景区</span>
+                </div>
+                <div class="topBigBox">
+                    <div class="slide">
+                        <ul class="bigImg">
+                            <li>
+                                <img src="res/img/lvyou-01.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/lvyou-01.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/lvyou-01.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/lvyou-01.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/lvyou-01.png" />
+                            </li>
+                            <li>
+                                <img src="res/img/lvyou-01.png" />
+                            </li>
+                        </ul>
+                        <div class="smallScroll">
+                            <a class="sPrev" href="javascript:void(0)"></a>
+                            <div class="smallImg">
+                                <ul>
+                                    <li><a><img src="res/img/lvyou-01.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/lvyou-01.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/lvyou-01.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/lvyou-01.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/lvyou-01.png" /></a><i></i></li>
+                                    <li><a><img src="res/img/lvyou-01.png" /></a><i></i></li>
+                                </ul>
+                            </div>
+                            <a class="sNext" href="javascript:void(0)"></a>
+                        </div>
+                        <div class="pageState"></div>
+                    </div>
+                    <div class="content">
+                        <h6>崆峒山旅游景区</h6>
+                        <p class="price">
+                            <span><em>¥</em>352<em class="mr-lef">/人</em></span>
+                            <b>价格说明</b>
+                        </p>
+                        <div class="line-dis-count">
+                            <p>优惠服务：订自助送租车券</p>
+                            <p>特色服务：<span class="spec-sever"><em>¥点评返现</em><em>写游记有奖</em></span></p>
+                        </div>
+                        <div class="cho-city-name">
+                            <p>出发城市：</p>
+                            <div class="city-box">
+                                <input type="text" value="" placeholder="请选择出发城市" id="citySelect" />
+                                <span>（65个可选城市）</span>
+                            </div>
+                        </div>
+                        <p class="btnBox" style="padding-left: 62px;">
+                            <a href="#" class="buyNow">立即抢购</a>
+                            <a href="#" class="scanCode">扫码预订<i></i></a>
+                            <a href="#" class="sIcon si01">关注</a>
+                            <a href="#" class="sIcon si02">在线咨询</a>
+                            <a href="#" class="sIcon si03">微信咨询</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="calendarBox"></div>
+                <div class="contentBox">
+                    <div class="slide">
+                        <a href="#" class="adPic" style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></a>
+                        <a href="#" class="adPic" style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></a>
+                    </div>
+                    <div class="main apiao">
+                        <div class="genreNav">
+                            <p>
+                                <span>
+                                    <a href="#areaBlock1" class="active">预订须知</a>
+                                    <a href="#areaBlock2">费用介绍</a>
+                                    <a href="#areaBlock3">推荐玩法</a>
+                                    <a href="#areaBlock4">用户点评</a>
+                                    <a href="#" class="now-paly ts">立即预订</a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="centerBigBox">
+                            <div class="areaBlock">
+                                <s id="areaBlock1"></s>
+                                <h1 class="mar-top"><i></i>费用介绍</h1>
+                                <div class="knows">
+                                    <p>退变更限制</p>
+                                    <p>1、有效期：2016.11.7 至 2017.6.30（周末、法定节假日通用）</p>
+                                    <p>2、使用时间：11:00-21:00</p>
+                                    <p>3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                                    <p>4、限购限用提醒：每张团券建议2人使用</p>
+                                    <p>5、包间：不可使用包间</p>
+                                    <p>6、堂食外带：仅限堂食，不提供餐前外带，餐毕未吃完可打包，打包费详情咨询商家</p>
+                                    <p>7、温馨提示：团购用户不可同时享受商家其他优惠，酒水饮料等问题，请致电商家咨询，以商家反馈为准</p>
+                                    <p>8、商家服务：提供免费WiFi</p>
+                                </div>
+                                <div class="knows pad-top-mod">
+                                    <p>支付信息</p>
+                                    <p>1、有效期：2016.11.7 至 2017.6.30（周末、法定节假日通用）</p>
+                                    <p>2、使用时间：11:00-21:00</p>
+                                    <p>3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                                </div>
+                            </div>
+                            <div class="areaBlock">
+                                <s id="areaBlock2"></s>
+                                <h1 class="mar-top"><i></i>购买须知</h1>
+                                <div class="knows">
+                                    <p>费用包含</p>
+                                    <p>1、有效期：2016.11.7 至 2017.6.30（周末、法定节假日通用）</p>
+                                    <p>2、使用时间：11:00-21:00</p>
+                                    <p>3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                                    <p>4、限购限用提醒：每张团券建议2人使用</p>
+                                </div>
+                                <div class="knows pad-top-mod">
+                                    <p>费用不包含</p>
+                                    <p>1、有效期：2016.11.7 至 2017.6.30（周末、法定节假日通用）</p>
+                                    <p>3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                                    <p>4、限购限用提醒：每张团券建议2人使用</p>
+                                </div>
+                            </div>
+                            <div class="areaBlock play-days-container">
+                                <s id="areaBlock3"></s>
+                                <h1 class="mar-top"><i></i>推荐玩法</h1>
+                                <div class="knows">
+                                    <div class="paly-detail-info">
+                                        <div class="day-number-cont">
+                                            <label id="pdl-date1"></label>
+                                            <h5>
+                                                <span>第一天</span>
+                                                <em>兰州/白塔山</em>
+                                            </h5>
+                                            <ul class="contet-show">
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon1"></em>
+                                                        <span>火车</span>
+                                                    </p>
+                                                    <div class="plan-cton">
+                                                        <p class="traver-time w-b">旅行时间11小时25分钟</p>
+                                                        <div class="txt">
+                                                            <p>参考列车：吧啊回复哈</p>
+                                                            <p>去程：兰州到嘿嘿吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon2"></em>
+                                                        <span class="w-b">崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon3"></em>
+                                                        <span>自助餐自助餐自助餐自助餐自助餐自助餐</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon4"></em>
+                                                        <span>住宿</span>
+                                                    </p>
+                                                    <div class="plan-cton hotel-info">
+                                                        <p>皇冠假日酒店</p>
+                                                        <p>房型：自选房型</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="day-number-cont">
+                                            <label id="pdl-date2"></label>
+                                            <h5>
+                                                <span>第二天</span>
+                                                <em>兰州/白塔山</em>
+                                            </h5>
+                                            <ul class="contet-show">
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon5"></em>
+                                                        <span>火车</span>
+                                                    </p>
+                                                    <div class="plan-cton">
+                                                        <p class="traver-time w-b">旅行时间11小时25分钟</p>
+                                                        <div class="txt">
+                                                            <p>参考列车：吧啊回复哈</p>
+                                                            <p>去程：兰州到嘿嘿吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon6"></em>
+                                                        <span class="w-b">崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon1"></em>
+                                                        <span>自助餐自助餐自助餐自助餐自助餐自助餐</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon2"></em>
+                                                        <span>住宿</span>
+                                                    </p>
+                                                    <div class="plan-cton hotel-info">
+                                                        <p>皇冠假日酒店</p>
+                                                        <p>房型：自选房型</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="day-number-cont">
+                                            <label id="pdl-date3"></label>
+                                            <h5>
+                                                <span>第三天</span>
+                                                <em>兰州/白塔山</em>
+                                            </h5>
+                                            <ul class="contet-show">
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon2"></em>
+                                                        <span>火车</span>
+                                                    </p>
+                                                    <div class="plan-cton">
+                                                        <p class="traver-time w-b">旅行时间11小时25分钟</p>
+                                                        <div class="txt">
+                                                            <p>参考列车：吧啊回复哈</p>
+                                                            <p>去程：兰州到嘿嘿吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈吧啊回复哈</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon2"></em>
+                                                        <span class="w-b">崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点崆峒山旅游景区旅游景点</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <span class="dashed-lie"></span>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon2"></em>
+                                                        <span>自助餐自助餐自助餐自助餐自助餐自助餐</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="plan-name">
+                                                        <em class="fk-icon2"></em>
+                                                        <span>住宿</span>
+                                                    </p>
+                                                    <div class="plan-cton hotel-info">
+                                                        <p>皇冠假日酒店</p>
+                                                        <p>房型：自选房型</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <i></i>
+                                    </div>
+                                    <ul class="play-day-list">
+                                        <li class="ts active">
+                                            <a href="#pdl-date1">D1</a>
+                                        </li>
+                                        <li class="ts">
+                                            <a href="#pdl-date2">D2</a>
+                                        </li>
+                                        <li class="ts">
+                                            <a href="#pdl-date3">D3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="areaBlock user-eva-luate">
+                                <s id="areaBlock4"></s>
+                                <h1 class="mar-top"><i></i>用户评价</h1>
+                                <div class="commentBox">
+                                    <div class="commentNav">
+                                        <a href="#" class="active">全部（1830）</a>
+                                        <a href="#">好评（1701）</a>
+                                        <a href="#">中评（105）</a>
+                                        <a href="#">差评（24）</a>
+                                        <a href="#">取票方便（466）</a>
+                                        <a href="#">便宜（228）</a>
+                                        <a href="#">服务好（199）</a>
+                                    </div>
+                                    <div class="commentMain">
+                                        <ul>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2017-03-07</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2017-03-07</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2017-03-07</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2017-03-07</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="top">
+                                                    <p class="star">
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="all"></i>
+                                                        <i class="half"></i>
+                                                        <i></i>
+                                                    </p>
+                                                    <span class="name">ACCBravo</span>
+                                                    <span class="date">2017-03-07</span>
+                                                </div>
+                                                <p class="brief">
+                                                    浴袍湿了，让服务员换就可以。服务态度很好。。。温泉也很干净，水池温度变低，职员加水加温速度也挺快的。。。 除了刚要出去泡温泉的时候 有个服务员在门口一直推荐私人汤，我们问她 大众汤人多吗？她说人多 所以我们打算去看一眼这个私人汤，，然后就另一个服务员窜出来问我们好几遍手牌号，好像就是我们已经说了要利用似的。。。一气之下我们就说了几句那服务员 往大众汤那边去 也没多少人 应该是说人很少。。。而且能体验各种功能汤。。。除了这 各个方面确实是很好。。。
+                                                </p>
+                                                <div class="picList">
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                    <p style="background: url(res/img/lvyou-01.png) no-repeat center; background-size: cover;"></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="pageBox">
+                                            <a href="javascript:void(0);" class="prevBtn">上一页<i></i></a>
+                                            <a href="javascript:void(0);">1</a>
+                                            <a href="javascript:void(0);" class="active">2</a>
+                                            <a href="javascript:void(0);">3</a>
+                                            <a href="javascript:void(0);">4</a>
+                                            <a href="javascript:void(0);">6</a>
+                                            <a href="javascript:void(0);">7</a>
+                                            <a href="javascript:void(0);">8</a>
+                                            <span>...</span>
+                                            <a href="javascript:void(0);">12</a>
+                                            <a href="javascript:void(0);" class="nextBtn">下一页<i></i></a>
+                                            <p>到<input type="text" value="7">页</p>
+                                            <a href="javascript:void(0);" class="submitBtn">确定</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="ours">
+                <div class="container">
+                    <div class="oursItem">
+                        <h2>关于我们</h2>
+                        <p>
+                            <a href="">公司简介</a>
+                            <i></i>
+                            <a href="#">崆通天下旅游护照</a>
+                        </p>
+                        <p>
+                            <a href="">联系我们</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>网站条款</h2>
+                        <p>
+                            <a href="">版权声明</a>
+                            <i></i>
+                            <a href="">会员预知</a>
+                        </p>
+                        <p>
+                            <a href="">免责声明</a>
+                            <i></i>
+                            <a href="">加盟须知</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>加盟合作</h2>
+                        <p>
+                            <a href="">分销联盟</a>
+                            <i></i>
+                            <a href="">代理合作</a>
+                        </p>
+                        <p>
+                            <a href="">保险代理</a>
+                            <i></i>
+                            <a href="">加盟服务</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>商家服务</h2>
+                        <p>
+                            <a href="">广告业务</a>
+                            <i></i>
+                            <a href="">商家入驻</a>
+                        </p>
+                        <p>
+                            <a href="">商家帮助</a>
+                            <i></i>
+                            <a href="">服务说明</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="container">
+                    <h2>友情链接</h2>
+                    <p>
+                        <a href="#">国家旅游局</a><i>|</i>
+                        <a href="#">甘肃旅游网</a><i>|</i>
+                        <a href="#">兰州旅游网</a><i>|</i>
+                        <a href="#">崆峒山旅游网</a><i>|</i>
+                        <a href="#">康县旅游网</a><i>|</i>
+                        <a href="#">临夏市旅游局</a><i>|</i>
+                        <a href="#">庆阳市旅游局</a><i>|</i>
+                        <a href="#">天水市旅游局</a><i>|</i>
+                        <a href="#">甘南市旅游局</a><i>|</i>
+                        <a href="#">陇南市旅游局</a><i>|</i>
+                        <a href="#">张掖市旅游局</a><i>|</i>
+                        <a href="#">嘉峪关旅游局</a><i>|</i>
+                        <a href="#">敦煌旅游局</a><i>|</i>
+                        <a href="#">平凉旅游局</a><i>|</i>
+                    </p>
+                    <span>陇ICP备05001007号-1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        jQuery(".topBigBox .slide").slide({
+            titCell:".smallImg li",
+            mainCell:".bigImg",
+            effect:"fold",
+            startFun:function(i,p){
+                if(i==0){
+                    jQuery(".topBigBox .sPrev").click()
+                } else if( i%5==0 ){
+                    jQuery(".topBigBox .sNext").click()
+                }
+            }
+        });
+        jQuery(".topBigBox .smallScroll").slide({
+            mainCell:"ul",
+            vis:5,
+            scroll:5,
+            effect:"left",
+            autoPage:true,
+            prevCell:".sPrev",
+            nextCell:".sNext",
+            pnLoop:false
+        });
+
+        $(function(){
+            offsetFun();
+
+            lineOffFun();
+
+            var test=new Vcity.CitySelector({input:'citySelect'});
+
+        });
+        $(function () {
+            $('.calendarInput input').click(function () {
+                var valendar = $('.calendarBox');
+                if(!$('.calendarBox').hasClass('open')) {
+                    valendar.stop().addClass('open').slideDown();
+                } else {
+                    valendar.stop().removeClass('open').slideUp();
+                }
+                $('.close-btn').click(function () {
+                    valendar.stop().removeClass('open').slideUp();
+                });
+            });
+
+
+            var root = 'res/lib/calendar/';
+            var config = {
+                modules: {
+                    'price-calendar': {
+                        fullpath: root + 'price-calendar.js',
+                        type    : 'js',
+                        requires: ['price-calendar-css']
+                    },
+                    'price-calendar-css': {
+                        fullpath: root + 'price-calendar.css',
+                        type    : 'css'
+                    }
+                }
+            };
+            YUI(config).use('price-calendar', 'jsonp', function(Y) {
+                var data = {
+                    "2017-03-31": {
+                        "price": "952",
+                        "roomNum": "0"
+                    },
+                    "2017-04-01": {
+                        "price": "1541",
+                        "roomNum": "1"
+                    },
+                    "2017-04-02": {
+                        "price": "625",
+                        "roomNum": "4"
+                    },
+                    "2017-04-03": {
+                        "price": "1698",
+                        "roomNum": "4"
+                    },
+                    "2017-04-04": {
+                        "price": "1438",
+                        "roomNum": "3"
+                    },
+                    "2017-04-05": {
+                        "price": "640",
+                        "roomNum": "3"
+                    },
+                    "2017-04-06": {
+                        "price": "569",
+                        "roomNum": "3"
+                    },
+                    "2017-04-07": {
+                        "price": "1669",
+                        "roomNum": "0"
+                    },
+                    "2017-04-08": {
+                        "price": "908",
+                        "roomNum": "1"
+                    },
+                    "2017-04-09": {
+                        "price": "959",
+                        "roomNum": "4"
+                    },
+                    "2017-04-10": {
+                        "price": "1229",
+                        "roomNum": "1"
+                    },
+                    "2017-04-11": {
+                        "price": "1183",
+                        "roomNum": "4"
+                    },
+                    "2017-04-12": {
+                        "price": "1752",
+                        "roomNum": "3"
+                    },
+                    "2017-04-13": {
+                        "price": "1495",
+                        "roomNum": "5"
+                    },
+                    "2017-04-14": {
+                        "price": "1066",
+                        "roomNum": "1"
+                    },
+                    "2017-04-15": {
+                        "price": "1404",
+                        "roomNum": "5"
+                    },
+                    "2017-04-16": {
+                        "price": "942",
+                        "roomNum": "1"
+                    },
+                    "2017-04-17": {
+                        "price": "514",
+                        "roomNum": "1"
+                    },
+                    "2017-04-18": {
+                        "price": "1004",
+                        "roomNum": "2"
+                    },
+                    "2017-04-19": {
+                        "price": "1645",
+                        "roomNum": "2"
+                    },
+                    "2017-04-20": {
+                        "price": "1290",
+                        "roomNum": "0"
+                    },
+                    "2017-04-21": {
+                        "price": "813",
+                        "roomNum": "4"
+                    },
+                    "2017-04-22": {
+                        "price": "677",
+                        "roomNum": "5"
+                    },
+                    "2017-04-23": {
+                        "price": "1615",
+                        "roomNum": "1"
+                    },
+                    "2017-04-24": {
+                        "price": "1692",
+                        "roomNum": "5"
+                    },
+                    "2017-04-25": {
+                        "price": "1456",
+                        "roomNum": "4"
+                    },
+                    "2017-04-26": {
+                        "price": "682",
+                        "roomNum": "5"
+                    },
+                    "2017-04-27": {
+                        "price": "674",
+                        "roomNum": "2"
+                    },
+                    "2017-04-28": {
+                        "price": "880",
+                        "roomNum": "3"
+                    },
+                    "2017-04-29": {
+                        "price": "1532",
+                        "roomNum": "2"
+                    },
+                    "2017-04-30": {
+                        "price": "1825",
+                        "roomNum": "2"
+                    },
+                    "2017-05-01": {
+                        "price": "1580",
+                        "roomNum": "4"
+                    },
+                    "2017-05-02": {
+                        "price": "1172",
+                        "roomNum": "0"
+                    },
+                    "2017-05-03": {
+                        "price": "904",
+                        "roomNum": "4"
+                    },
+                    "2017-05-04": {
+                        "price": "1372",
+                        "roomNum": "1"
+                    },
+                    "2017-05-05": {
+                        "price": "738",
+                        "roomNum": "5"
+                    },
+                    "2017-05-06": {
+                        "price": "1723",
+                        "roomNum": "3"
+                    },
+                    "2017-05-07": {
+                        "price": "960",
+                        "roomNum": "1"
+                    },
+                    "2017-05-08": {
+                        "price": "1302",
+                        "roomNum": "1"
+                    },
+                    "2017-05-09": {
+                        "price": "954",
+                        "roomNum": "5"
+                    },
+                    "2017-05-10": {
+                        "price": "771",
+                        "roomNum": "1"
+                    },
+                    "2017-05-11": {
+                        "price": "859",
+                        "roomNum": "1"
+                    },
+                    "2017-05-12": {
+                        "price": "1554",
+                        "roomNum": "5"
+                    },
+                    "2017-05-13": {
+                        "price": "1680",
+                        "roomNum": "1"
+                    },
+                    "2017-05-14": {
+                        "price": "893",
+                        "roomNum": "0"
+                    },
+                    "2017-05-15": {
+                        "price": "1284",
+                        "roomNum": "4"
+                    },
+                    "2017-05-16": {
+                        "price": "778",
+                        "roomNum": "1"
+                    },
+                    "2017-05-17": {
+                        "price": "1267",
+                        "roomNum": "4"
+                    },
+                    "2017-05-18": {
+                        "price": "752",
+                        "roomNum": "3"
+                    },
+                    "2017-05-19": {
+                        "price": "693",
+                        "roomNum": "3"
+                    },
+                    "2017-05-20": {
+                        "price": "1587",
+                        "roomNum": "4"
+                    },
+                    "2017-05-21": {
+                        "price": "715",
+                        "roomNum": "5"
+                    },
+                    "2017-05-22": {
+                        "price": "1845",
+                        "roomNum": "0"
+                    },
+                    "2017-05-23": {
+                        "price": "565",
+                        "roomNum": "0"
+                    },
+                    "2017-05-24": {
+                        "price": "801",
+                        "roomNum": "1"
+                    },
+                    "2017-05-25": {
+                        "price": "1422",
+                        "roomNum": "2"
+                    },
+                    "2017-05-26": {
+                        "price": "1755",
+                        "roomNum": "5"
+                    },
+                    "2017-05-27": {
+                        "price": "1655",
+                        "roomNum": "1"
+                    },
+                    "2017-05-28": {
+                        "price": "703",
+                        "roomNum": "3"
+                    },
+                    "2017-05-29": {
+                        "price": "1436",
+                        "roomNum": "4"
+                    },
+                    "2017-05-30": {
+                        "price": "901",
+                        "roomNum": "5"
+                    },
+                    "2017-05-31": {
+                        "price": "1738",
+                        "roomNum": "0"
+                    },
+                    "2017-06-01": {
+                        "price": "788",
+                        "roomNum": "2"
+                    },
+                    "2017-06-02": {
+                        "price": "699",
+                        "roomNum": "2"
+                    },
+                    "2017-06-03": {
+                        "price": "1792",
+                        "roomNum": "2"
+                    },
+                    "2017-06-04": {
+                        "price": "866",
+                        "roomNum": "5"
+                    },
+                    "2017-06-05": {
+                        "price": "1510",
+                        "roomNum": "0"
+                    },
+                    "2017-06-06": {
+                        "price": "1808",
+                        "roomNum": "5"
+                    },
+                    "2017-06-07": {
+                        "price": "765",
+                        "roomNum": "0"
+                    },
+                    "2017-06-08": {
+                        "price": "613",
+                        "roomNum": "1"
+                    },
+                    "2017-06-09": {
+                        "price": "534",
+                        "roomNum": "5"
+                    },
+                    "2017-06-10": {
+                        "price": "1753",
+                        "roomNum": "3"
+                    },
+                    "2017-06-11": {
+                        "price": "752",
+                        "roomNum": "5"
+                    },
+                    "2017-06-12": {
+                        "price": "1827",
+                        "roomNum": "3"
+                    },
+                    "2017-06-13": {
+                        "price": "989",
+                        "roomNum": "1"
+                    },
+                    "2017-06-14": {
+                        "price": "1675",
+                        "roomNum": "3"
+                    },
+                    "2017-06-15": {
+                        "price": "1514",
+                        "roomNum": "4"
+                    },
+                    "2017-06-16": {
+                        "price": "876",
+                        "roomNum": "0"
+                    },
+                    "2017-06-17": {
+                        "price": "1712",
+                        "roomNum": "4"
+                    },
+                    "2017-06-18": {
+                        "price": "1612",
+                        "roomNum": "3"
+                    },
+                    "2017-06-19": {
+                        "price": "1900",
+                        "roomNum": "1"
+                    },
+                    "2017-06-20": {
+                        "price": "907",
+                        "roomNum": "4"
+                    },
+                    "2017-06-21": {
+                        "price": "999",
+                        "roomNum": "2"
+                    },
+                    "2017-06-22": {
+                        "price": "1252",
+                        "roomNum": "2"
+                    },
+                    "2017-06-23": {
+                        "price": "595",
+                        "roomNum": "3"
+                    },
+                    "2017-06-24": {
+                        "price": "588",
+                        "roomNum": "4"
+                    },
+                    "2017-06-25": {
+                        "price": "1863",
+                        "roomNum": "4"
+                    },
+                    "2017-06-26": {
+                        "price": "680",
+                        "roomNum": "4"
+                    },
+                    "2017-06-27": {
+                        "price": "1373",
+                        "roomNum": "5"
+                    },
+                    "2017-06-28": {
+                        "price": "858",
+                        "roomNum": "3"
+                    }
+                };
+                var sub  = Y.Lang.sub;
+                var url = root + 'data.json';
+                //价格日历实例
+                var oCal = new Y.PriceCalendar();
+                //点击确定按钮
+                oCal.on('confirm', function() {
+//                alert('入住时间：' + this.get('depDate') + '\n离店时间：' + this.get('endDate'));
+                    $('.enterDate').val(this.get('depDate'));
+                    $('.leaveDate').val(this.get('endDate'));
+                });
+                //点击取消按钮
+                oCal.on('cancel', function() {
+                    this.set('depDate', '').set('endDate', '').render();
+                });
+                Y.one('#J_Example').delegate('click', function(e) {
+                        var enterDate = $('.enterDate').val(),
+                            leaveDate = $('.leaveDate').val();
+                        this.set('count', 2)
+                            .set('data', data)
+                            .set('depDate', enterDate)
+                            .set('endDate', leaveDate)
+                            .set('minDate', '')
+                            .set('date', new Date())
+                            .set('afterDays', 180)
+                            .render();
+                        var that = this;
+                    }, 'input', oCal
+                );
+            });
+        });
+    </script>
+</body>
+</html>

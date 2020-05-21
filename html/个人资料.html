@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="res/lib/placeChoose/address.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/index.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/eco.css">
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="res/lib/bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="res/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="res/lib/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="res/lib/placeChoose/address.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=D4739134efb9184fccbaec0ecf825c15"></script>
+    <script src="res/js/index.js"></script>
+    <title>个人资料</title>
+</head>
+<body>
+<div class="wraper bgc">
+    <div class="kts_index_header">
+        <div class="container_new">
+            <p>
+                <a href="注册页面.html" class="kts_register">注册</a>
+                <a href="登录页面.html" class="kts_login">登录</a>
+            </p>
+            <div class="kts_menu">
+                <i></i>
+                <a href="index.html" class="kts_menu_item0 ts"></a>
+                <a href="门票列表.html" class="kts_menu_item1 ts"></a>
+                <a href="酒店列表.html" class="kts_menu_item2 ts"></a>
+                <a href="自由行列表.html" class="kts_menu_item3 ts"></a>
+                <a href="租车列表.html" class="kts_menu_item4 ts"></a>
+                <a href="餐饮列表.html" class="kts_menu_item5 ts"></a>
+                <a href="特产列表.html" class="kts_menu_item6 ts"></a>
+                <a href="娱乐列表.html" class="kts_menu_item7 ts"></a>
+                <a href="#" class="kts_menu_item8 ts"></a>
+            </div>
+        </div>
+    </div>
+    <div class="kts-user">
+        <div class="container">
+            <div class="mbxBox">
+                您所在的位置：
+                <a href="#">首页</a>
+                <em>&gt;</em>
+                <span>个人资料</span>
+            </div>
+            <div class="kts-user_box">
+                <div class="kts-user_side">
+                    <div class="kts-user_item">
+                        <a href="#" class="kts-user_open">订单<s></s></a>
+                        <ul>
+                            <li>
+                                <a href="#">全部订单</a>
+                            </li>
+                            <li>
+                                <a href="#">门票订单</a>
+                            </li>
+                            <li>
+                                <a href="#">特产订单</a>
+                            </li>
+                            <li>
+                                <a href="#">线路订单</a>
+                            </li>
+                            <li>
+                                <a href="#">租车订单</a>
+                            </li>
+                            <li>
+                                <a href="#">娱乐订单</a>
+                            </li>
+                            <li>
+                                <a href="#">酒店订单</a>
+                            </li>
+                            <li>
+                                <a href="#">餐饮订单</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="kts-user_item">
+                        <a href="javascript:void(0);" class="kts-user_open"><i class="kts-user_icon kui-3"></i>设置<s></s></a>
+                        <ul>
+                            <li>
+                                <a href="个人资料.html">个人资料</a>
+                            </li>
+                            <li>
+                                <a href="联系人信息.html">联系人信息</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kts-user_main">
+                    <div class="kts-user_title">个人资料</div>
+                    <div class="kts-user_top">
+                        <div class="kts-user_avatar" style="background: url(res/img/img-01.png) no-repeat center; background-size: cover;"></div>
+                        <p>Skype</p>
+                        <div class="kts-user_progress">
+                            <span>资料完整度</span>
+                            <i><s style="width: 80%;"></s><em>80%</em></i>
+                        </div>
+                    </div>
+                    <div class="kts-user_edit">
+                        <dl>
+                            <dt>昵&emsp;&emsp;称</dt>
+                            <dd class="kts-user_err">
+                                <input class="kts-user_md" style="border: 1px solid #2ebd59;" type="text" placeholder="由4~16位中英文字符组成">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>真实姓名</dt>
+                            <dd>
+                                <input class="kts-user_sx" type="text" placeholder="真实姓名">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>手机号码</dt>
+                            <dd>
+                                <span>188****0504</span>
+                                <a style="color: #08c;" href="#">修改&gt;&gt;</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>电子邮箱</dt>
+                            <dd>
+                                <input class="kts-user_md" type="text" placeholder="电子邮箱">
+                            </dd>
+                        </dl>
+                        <hr>
+                        <dl>
+                            <dt>性&emsp;&emsp;别</dt>
+                            <dd>
+                                <label>
+                                    <i></i>
+                                    <input type="radio" name="sex">男
+                                </label>
+                                <label>
+                                    <i></i>
+                                    <input type="radio" name="sex">女
+                                </label>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>QQ&nbsp;号码</dt>
+                            <dd>
+                                <input class="kts-user_md" type="text" placeholder="QQ号码">
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="kts-user_tip">
+                        <p> 郑重承诺：</p>
+                        <p>我们将尊重您的个人隐私，您的个人信息不会被公开。</p>
+                        <p>请您完善个人信息，我们会为您量身定制个性化的服务，让您享受更优质的出行体验。</p>
+                    </div>
+                    <a href="#" style="color:#fff" class="kts-user_submit">保存</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ours">
+            <div class="container">
+                <div class="oursItem">
+                    <h2>关于我们</h2>
+                    <p>
+                        <a href="">公司简介</a>
+                        <i></i>
+                        <a href="#">崆通天下旅游护照</a>
+                    </p>
+                    <p>
+                        <a href="">联系我们</a>
+                    </p>
+                </div>
+                <div class="oursItem">
+                    <h2>网站条款</h2>
+                    <p>
+                        <a href="">版权声明</a>
+                        <i></i>
+                        <a href="">会员预知</a>
+                    </p>
+                    <p>
+                        <a href="">免责声明</a>
+                        <i></i>
+                        <a href="">加盟须知</a>
+                    </p>
+                </div>
+                <div class="oursItem">
+                    <h2>加盟合作</h2>
+                    <p>
+                        <a href="">分销联盟</a>
+                        <i></i>
+                        <a href="">代理合作</a>
+                    </p>
+                    <p>
+                        <a href="">保险代理</a>
+                        <i></i>
+                        <a href="">加盟服务</a>
+                    </p>
+                </div>
+                <div class="oursItem">
+                    <h2>商家服务</h2>
+                    <p>
+                        <a href="">广告业务</a>
+                        <i></i>
+                        <a href="">商家入驻</a>
+                    </p>
+                    <p>
+                        <a href="">商家帮助</a>
+                        <i></i>
+                        <a href="">服务说明</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <div class="container">
+                <h2>友情链接</h2>
+                <p>
+                    <a href="#">国家旅游局</a><i>|</i>
+                    <a href="#">甘肃旅游网</a><i>|</i>
+                    <a href="#">兰州旅游网</a><i>|</i>
+                    <a href="#">崆峒山旅游网</a><i>|</i>
+                    <a href="#">康县旅游网</a><i>|</i>
+                    <a href="#">临夏市旅游局</a><i>|</i>
+                    <a href="#">庆阳市旅游局</a><i>|</i>
+                    <a href="#">天水市旅游局</a><i>|</i>
+                    <a href="#">甘南市旅游局</a><i>|</i>
+                    <a href="#">陇南市旅游局</a><i>|</i>
+                    <a href="#">张掖市旅游局</a><i>|</i>
+                    <a href="#">嘉峪关旅游局</a><i>|</i>
+                    <a href="#">敦煌旅游局</a><i>|</i>
+                    <a href="#">平凉旅游局</a><i>|</i>
+                </p>
+                <span>陇ICP备05001007号-1</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.kts-user_open').click(function () {
+        $(this).toggleClass('open','').siblings().slideToggle('fast');
+    });
+    $('.kts-user_item ul a').click(function () {
+        $('.kts-user_item ul a').removeClass();
+        $(this).addClass('cur');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="res/lib/placeChoose/address.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/index.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/eco.css">
+	<link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="res/lib/bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="res/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="res/lib/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="res/lib/placeChoose/address.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=D4739134efb9184fccbaec0ecf825c15"></script>
+	<script src="res/js/index.js"></script>
+    <title>支付方式</title>
+</head>
+<body>
+<div class="wraper bgc">
+	<div class="kts_index_header">
+		<div class="container_new">
+			<p>
+				<a href="注册页面.html" class="kts_register">注册</a>
+				<a href="登录页面.html" class="kts_login">登录</a>
+			</p>
+			<div class="kts_menu">
+				<i></i>
+				<a href="index.html" class="kts_menu_item0 ts"></a>
+				<a href="门票列表.html" class="kts_menu_item1 ts"></a>
+				<a href="酒店列表.html" class="kts_menu_item2 ts"></a>
+				<a href="自由行列表.html" class="kts_menu_item3 ts"></a>
+				<a href="租车列表.html" class="kts_menu_item4 ts"></a>
+				<a href="餐饮列表.html" class="kts_menu_item5 ts"></a>
+				<a href="特产列表.html" class="kts_menu_item6 ts active"></a>
+				<a href="娱乐列表.html" class="kts_menu_item7 ts"></a>
+				<a href="#" class="kts_menu_item8 ts"></a>
+			</div>
+		</div>
+	</div>
+    <div class="pay-box">
+        <div class="order-send-infor-hd">
+            <h5>选择收货地址</h5>
+        </div>
+		<div class="cart_address_wrap" id="cartAddress">
+			<!-- 选择收获地址list -->
+			<ul class="cart_address_list clearfix" id="cartAddressList" style="height: 160px">
+				<li data-aid="2145246483">
+					<a class="cart_address_card addressCard selected" href="javascript:void (0);"
+						data-aid="2145246483">
+						<h5 class="cart_address_tit">
+							史雄伟
+						</h5>
+						<p class="cart_address_street">
+							高新开发区张苏滩553号
+						</p>
+						<p class="cart_address_zipinfo" data-area="城关区" data-city="兰州市"
+							data-province="甘肃省" data-postcode="730000">
+							甘肃省兰州市城关区 730000
+						</p>
+						<p class="cart_address_mobile">
+							13893302154
+						</p> <i class="cart_address_edit" style="display: none;">编辑</i> </a>
+				</li>
+				<li data-aid="2143719357">
+					<a class="cart_address_card addressCard " href="javascript:void (0);" data-aid="2143719357">
+						<h5 class="cart_address_tit">
+							金好贤
+						</h5>
+						<p class="cart_address_street">
+							甘肃省张掖市民乐县三堡镇012#
+						</p>
+						<p class="cart_address_zipinfo" data-area="崆峒区" data-city="平凉市"
+							data-province="甘肃省" data-postcode="744000">
+							甘肃省张掖市民乐县三堡镇 744666
+						</p>
+						<p class="cart_address_mobile">
+							13269847679
+						</p> <i class="cart_address_edit" style="display: none;">编辑</i> </a>
+				</li>
+			</ul>
+			<!-- 管理收获地址 -->
+			<ul class="cart_address_ctrl clearfix" id="addressCtrl">
+				<li>
+					<a class="cart_icon_link allAddressSwitch" style="display: none"
+						href="javascript:void (0);">显示全部地址<i class="cart_icon_quarw">down</i>
+					</a>
+				</li>
+				<li>
+					<a href="http://logistics.mogujie.com/trade/address"
+						target="_blank">管理收货地址</a>
+				</li>
+				<li>
+					<a class="addOtherAddress" href="javascript:void (0);">使用新地址</a>
+				</li>
+			</ul>
+			<div id="otherAddrWrap" style="display: none;">
+				<div class="__addressPop">
+					<dl class="address_pop">
+						<input name="addressId" class="J_addressid" type="hidden"
+							value="">
+						<dt>
+							省：
+						</dt>
+						<dd>
+							<i class="needicon">*</i>
+							<select name="province" class="J_province J_select w140 vm">
+								<option value="0">
+									--选择省--
+								</option>
+								<option selected="selected" value="100000">
+									北京市
+								</option>
+								<option value="100073">
+									上海市
+								</option>
+								<option value="100168">
+									天津市
+								</option>
+								<option value="100216">
+									重庆市
+								</option>
+								<option value="101254">
+									河北省
+								</option>
+								<option value="101439">
+									山西省
+								</option>
+								<option value="101570">
+									河南省
+								</option>
+								<option value="101770">
+									辽宁省
+								</option>
+								<option value="101890">
+									吉林省
+								</option>
+								<option value="101964">
+									黑龙江省
+								</option>
+								<option value="102110">
+									内蒙古自治区
+								</option>
+								<option value="102225">
+									江苏省
+								</option>
+								<option value="102351">
+									山东省
+								</option>
+								<option value="102515">
+									安徽省
+								</option>
+								<option value="102647">
+									浙江省
+								</option>
+								<option value="102752">
+									福建省
+								</option>
+								<option value="102848">
+									湖北省
+								</option>
+								<option value="103056">
+									湖南省
+								</option>
+								<option value="103198">
+									广东省
+								</option>
+								<option value="103407">
+									广西壮族自治区
+								</option>
+								<option value="103532">
+									江西省
+								</option>
+								<option value="103650">
+									四川省
+								</option>
+								<option value="103857">
+									海南省
+								</option>
+								<option value="104153">
+									贵州省
+								</option>
+								<option value="104252">
+									云南省
+								</option>
+								<option value="104398">
+									西藏自治区
+								</option>
+								<option value="104479">
+									陕西省
+								</option>
+								<option value="104598">
+									甘肃省
+								</option>
+								<option value="104703">
+									青海省
+								</option>
+								<option value="104758">
+									宁夏回族自治区
+								</option>
+								<option value="104786">
+									新疆维吾尔自治区
+								</option>
+								<option value="104934">
+									香港特别行政区
+								</option>
+								<option value="104956">
+									澳门特别行政区
+								</option>
+								<option value="104959">
+									台湾省
+								</option>
+							</select>
+							<label class="dt">
+								市：
+							</label>
+							<select name="city" class="J_city J_select w100 vm" style="width: 120px">
+								<option value="0">
+									--选择市--
+								</option>
+								<option selected="selected" value="104909">
+									兰州市
+								</option>
+								<option selected="selected" value="104909">
+									金昌市
+								</option>
+								<option selected="selected" value="104909">
+									白银市
+								</option>
+								<option selected="selected" value="104909">
+									天水市
+								</option>
+								<option selected="selected" value="104909">
+									酒泉市
+								</option>
+								<option selected="selected" value="104909">
+									张掖市
+								</option>
+								<option selected="selected" value="104909">
+									武威市
+								</option>
+								<option selected="selected" value="104909">
+									定西市
+								</option>
+								<option selected="selected" value="104909">
+									陇南市
+								</option>
+								<option selected="selected" value="104909">
+									平凉市
+								</option>
+								<option selected="selected" value="104909">
+									庆阳市
+								</option>
+								<option selected="selected" value="104909">
+									嘉峪关市
+								</option>
+								<option selected="selected" value="104909">
+									临夏回族自治州
+								</option>
+								<option selected="selected" value="104909">
+									甘南藏族自治州
+								</option>
+							</select>
+							<label class="dt" >
+								区：
+							</label>
+							<select name="area" class="J_area J_select w100 vm">
+								<option value="0">
+									--选择区--
+								</option>
+								<option selected="selected" value="100001">
+									城关区
+								</option>
+								<option value="100009">
+									七里河区
+								</option>
+								<option value="100017">
+									西固区
+								</option>
+								<option value="100020">
+									安宁区
+								</option>
+								<option value="100027">
+									红古区
+								</option>
+								<option value="100033">
+									永登县
+								</option>
+								<option value="100040">
+									皋兰县
+								</option>
+								<option value="100043">
+									榆中县
+								</option>
+								<option value="100048">
+									兰州新区
+								</option>
+							</select>
+							<span class="prompt"></span>
+						</dd>
+						<dt>
+							邮政编码：
+						</dt>
+						<dd>
+							<i class="needicon">*</i>
+							<input name="zip"
+								class="text formsize_normal J_postcode J_form vm" type="text"
+								data-type="c" data-normal="" data-errormsg="请填写正确的邮政编码">
+							<span class="prompt"></span>
+						</dd>
+						<dt>
+							街道地址：
+						</dt>
+						<dd>
+							<i class="needicon">*</i>
+							<textarea name="address"
+								class="textarea formsize_large J_street J_form" rows="3"
+								cols="30" data-type="*"
+								data-normal="请填写街道地址，最少5个字，最多不能超过100个字"
+								data-errormsg="请填写街道地址，最少5个字，最多不能超过100个字" data-max="100"
+								data-min="5"></textarea>
+							<span class="prompt breakline">请填写街道地址，最少5个字，最多不能超过100个字</span>
+						</dd>
+						<dt>
+							收货人姓名：
+						</dt>
+						<dd>
+							<i class="needicon">*</i>
+							<input name="realName"
+								class="text formsize_normal J_name J_form vm" type="text"
+								data-type="*" data-normal="" data-errormsg="请填写收货人">
+							<span class="prompt"></span>
+						</dd>
+						<dt>
+							手机：
+						</dt>
+						<dd>
+							<i class="needicon">*</i>
+							<input name="mobile"
+								class="text formsize_normal J_mobile J_form vm" type="text"
+								data-type="phone" data-normal="" data-errormsg="请填写正确的联系号码">
+							<span class="prompt"></span>
+						</dd>
+						<dt></dt>
+						<dd class="pt10 oper_btn">
+							<a class="confirm_btn J_okbtn mr10" href="javascript:void (0);">确认地址</a><a
+								class="cancel_btn J_cancelbtn" href="javascript:void (0);">取消</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="order-send-infor-hd">
+            <h5>确认商品信息</h5>
+        </div>
+        <div class="order-send-men-bd">
+        	<div class="cart_com">
+			<table class="cart_table">
+						<thead>
+							<tr>
+								<th>
+									商品
+								</th>
+								<th>
+									商品信息
+								</th>
+								<th width="80">
+									单价(元)
+								</th>
+								<th width="80">
+									数量
+								</th>
+								<th style="float:right">
+									小计(元)
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!--店铺-->
+							<tr data-shopid="117089dw">
+								<td colspan="6">店铺：
+									<a class="cart_hoverline"
+										href="http://shop.mogujie.com/117089dw" target="_blank">特产商家</a>
+									<a class="cart_im_btn mr5 mogutalk_widget_btn mogutalk_btn"
+										href="javascript:void (0);" data-bid="117089dw#23">联系客服</a>
+								</td>
+							</tr>
+							<!--商品 遍历-->
+							<tr class="tr_checked item4shop117089dw" data-stockid="1mslkxe">
+								<td>
+									<!-- 商品 -->
+									<a class="cart_goods_img"
+										href="http://shop.mogujie.com/detail/1k0nvok" target="_blank">
+										<img width="78" height="78" class="cartImgTip"
+											alt="崆峒山苹果新鲜水果特产静宁红富士当季脆甜生鲜农产品5斤8个包邮"
+											src="res/img/tc-01.png">
+									</a>
+									<a title="良品铺子 手造麻薯150g*3盒（抹茶/榴莲/芒果/榴芒）"
+										class="cart_goods_t cart_hoverline"
+										href="http://shop.mogujie.com/detail/1k0nvok" target="_blank">
+										崆峒山苹果新鲜水果特产静宁红富士当季脆甜生鲜农产品5斤8个包邮</a>
+								</td>
+								<td>
+									<p class="cart_lh20">
+										净含量：200g/个
+									</p>
+								</td>
+								<td class="cart_alcenter">
+									<!-- 单价 -->
+									<p style="font-weight: 700;">
+										39.80
+									</p>
+								</td>
+								<td class="cart_alcenter">
+									<!-- 数量 -->
+									<p class="cart_itemNum">
+										1
+									</p>
+								</td>
+								<td class="cart_alcenter" style="float:right">
+									<!-- 小计 -->
+									<p style="font-size: 16px !important;" data-price="19.90">
+										19.90
+									</p>
+								</td>
+							</tr>
+							<!--备注：-->
+							<tr class="tr_checked">
+								<td colspan="3">
+									备注：
+									<input name="comment20169841-102087869-8-0"
+										class="cart_table_note cart_text"
+										style="color: rgb(204, 204, 204);" type="text"
+										placeholder="补充填写其他信息，如有快递不到也请留言备注">
+								</td>
+								<td class="pr15 cart_largepding" colspan="3">
+									<span style="float:right">快递运费：<strong>¥0.00</strong></span>
+								</td>
+							</tr>
+							<!--合计-->
+						</tbody>
+					</table>
+				</div>
+        </div>
+    </div>
+	<div class="payment-methods">
+		<h4>选择支付方式</h4>
+		<div class="methon-box">
+			<a class="methon-01 active" href="javascript:void (0);"></a>
+			<a class="methon-02" href="javascript:void (0);"></a>
+		</div>
+	</div>
+    <div class="payfor">
+        <a href="#top"><span class="totop"></span></a>
+
+        <div class="main1181">
+            <a href="订单详情.html">去支付</a>
+            <em>¥166.0</em>
+            <p>订单总金额：</p>
+        </div>
+    </div>
+	<div class="footer">
+		<div class="ours">
+			<div class="container">
+				<div class="oursItem">
+					<h2>关于我们</h2>
+					<p>
+						<a href="">公司简介</a>
+						<i></i>
+						<a href="#">崆通天下旅游护照</a>
+					</p>
+					<p>
+						<a href="">联系我们</a>
+					</p>
+				</div>
+				<div class="oursItem">
+					<h2>网站条款</h2>
+					<p>
+						<a href="">版权声明</a>
+						<i></i>
+						<a href="">会员预知</a>
+					</p>
+					<p>
+						<a href="">免责声明</a>
+						<i></i>
+						<a href="">加盟须知</a>
+					</p>
+				</div>
+				<div class="oursItem">
+					<h2>加盟合作</h2>
+					<p>
+						<a href="">分销联盟</a>
+						<i></i>
+						<a href="">代理合作</a>
+					</p>
+					<p>
+						<a href="">保险代理</a>
+						<i></i>
+						<a href="">加盟服务</a>
+					</p>
+				</div>
+				<div class="oursItem">
+					<h2>商家服务</h2>
+					<p>
+						<a href="">广告业务</a>
+						<i></i>
+						<a href="">商家入驻</a>
+					</p>
+					<p>
+						<a href="">商家帮助</a>
+						<i></i>
+						<a href="">服务说明</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="links">
+			<div class="container">
+				<h2>友情链接</h2>
+				<p>
+					<a href="#">国家旅游局</a><i>|</i>
+					<a href="#">甘肃旅游网</a><i>|</i>
+					<a href="#">兰州旅游网</a><i>|</i>
+					<a href="#">崆峒山旅游网</a><i>|</i>
+					<a href="#">康县旅游网</a><i>|</i>
+					<a href="#">临夏市旅游局</a><i>|</i>
+					<a href="#">庆阳市旅游局</a><i>|</i>
+					<a href="#">天水市旅游局</a><i>|</i>
+					<a href="#">甘南市旅游局</a><i>|</i>
+					<a href="#">陇南市旅游局</a><i>|</i>
+					<a href="#">张掖市旅游局</a><i>|</i>
+					<a href="#">嘉峪关旅游局</a><i>|</i>
+					<a href="#">敦煌旅游局</a><i>|</i>
+					<a href="#">平凉旅游局</a><i>|</i>
+				</p>
+				<span>陇ICP备05001007号-1</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script language="javascript">
+    $(function(){
+        $(".addOtherAddress").click(function(){
+            $("#otherAddrWrap").toggle();
+        });
+        $(".cart_address_card").mouseover(function(){
+            $(this).find(".cart_address_edit").show();
+        });
+        $(".cart_address_card").mouseout(function(){
+            $(this).find(".cart_address_edit").hide	();
+        });
+        $(".cart_address_wrap ul li").click(function () {
+            $(this).find("a").addClass("selected").parent().siblings().find("a").removeClass("selected");
+        });
+		$(".methon-box a").click(function () {
+			$(this).addClass("active").siblings().removeClass("active")
+        })
+    });
+</script>
+</body>
+</html>

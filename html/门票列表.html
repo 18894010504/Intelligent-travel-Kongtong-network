@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="res/lib/placeChoose/address.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/index.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/eco.css">
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="res/lib/bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="res/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="res/lib/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="res/lib/placeChoose/address.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=D4739134efb9184fccbaec0ecf825c15"></script>
+    <script src="res/js/index.js"></script>
+    <title>门票列表</title>
+</head>
+<body>
+    <div class="wraper bgc">
+        <div class="kts_index_header">
+            <div class="container_new">
+                <p>
+                    <a href="注册页面.html" class="kts_register">注册</a>
+                    <a href="登录页面.html" class="kts_login">登录</a>
+                </p>
+                <div class="kts_menu">
+                    <i></i>
+                    <a href="index.html" class="kts_menu_item0 ts"></a>
+                    <a href="门票列表.html" class="kts_menu_item1 ts active"></a>
+                    <a href="酒店列表.html" class="kts_menu_item2 ts"></a>
+                    <a href="自由行列表.html" class="kts_menu_item3 ts"></a>
+                    <a href="租车列表.html" class="kts_menu_item4 ts"></a>
+                    <a href="餐饮列表.html" class="kts_menu_item5 ts"></a>
+                    <a href="特产列表.html" class="kts_menu_item6 ts"></a>
+                    <a href="娱乐列表.html" class="kts_menu_item7 ts"></a>
+                    <a href="#" class="kts_menu_item8 ts"></a>
+                </div>
+            </div>
+        </div>
+        <div class="lineList">
+            <div class="container">
+                <div class="mbxBox">
+                    您所在的位置：
+                    <a href="#">首页</a>
+                    <em>&gt;</em>
+                    <a href="#"><span>门票</span></a>
+                </div>
+                <div class="selectX">
+                    <div class="selectX">
+                        <input name="orderField" id="orderField" type="hidden" value="">
+                        <input name="pageNum" id="pageNum" type="hidden" value="1">
+                        <div class="time-select-wraper">
+                            <div class="time-contain select-destio-box">
+                                <span>目的地</span>
+                                <input name="destination" id="destination" type="hidden" value="">
+                                <input name="place" value="" class="shoe-place data-time-place" readonly="" placeholder="请选择目的地">
+                                <ul class="select-destio-place" style="display: none;">
+                                    <li class="ts active">请选择目的地</li>
+                                    <li class="ts">崆峒区</li>
+                                    <li class="ts">泾川县</li>
+                                    <li class="ts">灵台县</li>
+                                    <li class="ts">崇信县</li>
+                                    <li class="ts">华亭县</li>
+                                    <li class="ts">庄浪县</li>
+                                    <li class="ts">静宁县</li>
+                                    <li class="ts">平凉工业园区</li>
+                                </ul>
+                            </div>
+                            <div class="time-contain">
+                                <span>关键词</span>
+                                <input class="shoe-place" name="keyword" value="" type="text" placeholder="请输入娱乐场所名称" style="cursor: auto;">
+                            </div>
+                            <div class="time-contain">
+                                <p class="query-contain" id="search">查询</p>
+                            </div>
+                        </div>
+                        <div class="selectBox selectClose">
+                            <div class="slide">
+                                <ul>
+                                    <li>您的选择</li>
+                                    <li><p><i class="icon01"></i>景区主题</p></li>
+                                </ul>
+                            </div>
+                            <div class="main">
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <span>目的地</span>
+                                            兰州
+                                            <a href="#">×</a>
+                                        </li>
+                                        <li>
+                                            <span>目的地</span>
+                                            兰州
+                                            <a href="#">×</a>
+                                        </li>
+                                        <li>
+                                            <span>目的地</span>
+                                            兰州
+                                            <a href="#">×</a>
+                                        </li>
+                                        <li>
+                                            <span>目的地</span>
+                                            兰州
+                                            <a href="#">×</a>
+                                        </li>
+                                        <li>
+                                            <span>目的地</span>
+                                            兰州
+                                            <a href="#">×</a>
+                                        </li>
+                                        <li>
+                                            <span>目的地</span>
+                                            兰州
+                                            <a href="#">×</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="clear">清除</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list">
+                                    <a href="javascript:void(0);" class="moreIcon ts">更多<i></i></a>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <i><s></s></i>
+                                                <input name="mdd" type="radio" value="all"/>
+                                                <span>不限</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <i><s></s></i>
+                                                <input name="mdd" type="radio" value="" checked="checked"/>
+                                                <span>宗教寺庙</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <i><s></s></i>
+                                                <input name="mdd" type="radio" value=""/>
+                                                <span>历史遗迹</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <i><s></s></i>
+                                                <input name="mdd" type="radio" value=""/>
+                                                <span>丹霞地貌</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <i><s></s></i>
+                                                <input name="mdd" type="radio" value=""/>
+                                                <span>人文古镇</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <i><s></s></i>
+                                                <input name="mdd" type="radio" value=""/>
+                                                <span>峡谷溪流</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <div class="slide">
+                        <div class="mapBox">
+                            <a class="big-map">查看大图</a>
+                            <div class="traffic-map" id="traffic-map"></div>
+                        </div>
+                        <div class="tipBox">
+                            <ul>
+                                <li>
+                                    <h1><i class="icon01"></i>全面覆盖</h1>
+                                    <p>2万景区，门票联票，应有竟有</p>
+                                </li>
+                                <li>
+                                    <h1><i class="icon02"></i>超值低价</h1>
+                                    <p>低价不停，折扣不停，活动多多</p>
+                                </li>
+                                <li>
+                                    <h1><i class="icon03"></i>购票方便</h1>
+                                    <p>随时购票，免排队，迅速入园</p>
+                                </li>
+                                <li>
+                                    <h1><i class="icon04"></i>保障计划</h1>
+                                    <p>入园保障，购票放心，出行无忧</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h1>浏览历史</h1>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="pic" style="background: url(res/img/img.png) no-repeat center; background-size: cover;"></div>
+                                        <div class="content">
+                                            <p class="title">庄浪陈家洞</p>
+                                            <p class="brief w-b">世界文化遗产，人类艺术的殿堂</p>
+                                            <p class="price">
+                                                <span><em>¥10</em>起</span>
+                                                <span>票面价¥20<i></i></span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="pic" style="background: url(res/img/img.png) no-repeat center; background-size: cover;"></div>
+                                        <div class="content">
+                                            <p class="title">庄浪陈家洞</p>
+                                            <p class="brief w-b">世界文化遗产，人类艺术的殿堂</p>
+                                            <p class="price">
+                                                <span><em>¥10</em>起</span>
+                                                <span>票面价¥20<i></i></span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="pic" style="background: url(res/img/img.png) no-repeat center; background-size: cover;"></div>
+                                        <div class="content">
+                                            <p class="title">庄浪陈家洞</p>
+                                            <p class="brief w-b">世界文化遗产，人类艺术的殿堂</p>
+                                            <p class="price">
+                                                <span><em>¥10</em>起</span>
+                                                <span>票面价¥20<i></i></span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h1>大家还在扫一扫</h1>
+                            <div class="codeBox">
+                                <div class="pic" style="background: url(res/img/lvyou.png) no-repeat center; background-size: cover;"></div>
+                                <div class="content">
+                                    <p>甘肃平凉旅游微信公众号</p>
+                                    <span>——旅行触手可及</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="sortBox">
+                            <a href="#" class="active">默认排序</a>
+                            <a href="#">A级</a>
+                            <a href="#">价格</a>
+                        </div>
+                        <div >
+                            <ul class="list-product">
+                                <li class="fn-clear">
+                                    <div class=" product-img" style="background: url(res/img/img.png) no-repeat center;background-size: cover;"></div>
+                                    <ul class="product-infor">
+                                        <li class="infor-title">
+                                            <h5>云崖寺</h5>
+                                        </li>
+                                        <li class="infor-star">
+                                            <span>9.7分</span>
+                                            <div class="star-box  fn-clear">
+                                                <em class="color"></em>
+                                                <em class="color"></em>
+                                                <em class="color"></em>
+                                                <em class=""></em>
+                                                <em class=""></em>
+                                            </div>
+                                        </li>
+                                        <li class="infor-tips">
+                                            <span>地道烤鱼</span>
+                                            <span>聚会唱歌</span>
+                                        </li>
+                                        <li class="infor-adderss">
+                                            <p>地址：平凉市庄浪县韩店镇石桥</p>
+                                        </li>
+                                        <li class="infor-talk">
+                                            <p>月销量：<i class="pink">7826</i> 份</p>
+                                            <p><i class="green">78290</i>人评价</p>
+                                        </li>
+                                    </ul>
+                                    <div class=" product-price">
+                                        <h4>人均消费</h4>
+                                        <h5><p class="red">¥ <span>60.0</span></p>起</h5>
+                                        <a href="门票详情.html">查看详情</a>
+                                    </div>
+                                    <div class=" product-buy">
+                                        <span>该商家有<em>4</em>个相关团购：</span>
+                                        <a>展开团购<i></i></a>
+                                    </div>
+                                    <div class=" product-buyinfor">
+                                        <ul>
+                                            <li class="buyinfor-top">
+                                                <p class="row1">名称</p>
+                                                <p class="row2">门店价</p>
+                                                <p class="row3">团购价</p>
+                                                <p class="row4">兑换方式</p>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="fn-clear">
+                                    <div class=" product-img" style="background: url(res/img/img.png) no-repeat center;background-size: cover;"></div>
+                                    <ul class="product-infor">
+                                        <li class="infor-title">
+                                            <h5>云崖寺</h5>
+                                        </li>
+                                        <li class="infor-star">
+                                            <span>9.7分</span>
+                                            <div class="star-box  fn-clear">
+                                                <em class="color"></em>
+                                                <em class="color"></em>
+                                                <em class="color"></em>
+                                                <em class=""></em>
+                                                <em class=""></em>
+                                            </div>
+                                        </li>
+                                        <li class="infor-tips">
+                                            <span>地道烤鱼</span>
+                                            <span>聚会唱歌</span>
+                                        </li>
+                                        <li class="infor-adderss">
+                                            <p>地址：平凉市庄浪县韩店镇石桥</p>
+                                        </li>
+                                        <li class="infor-talk">
+                                            <p>月销量：<i class="pink">7826</i> 份</p>
+
+                                            <p><i class="green">78290</i>人评价</p>
+                                        </li>
+                                    </ul>
+                                    <div class=" product-price">
+                                        <h4>人均消费</h4>
+                                        <h5><p class="red">¥ <span>60.0</span></p>起</h5>
+                                        <a href="门票详情.html">查看详情</a>
+                                    </div>
+                                    <div class=" product-buy">
+                                        <span>该商家有<em>4</em>个相关团购：</span>
+                                        <a>展开团购<i></i></a>
+                                    </div>
+                                    <div class=" product-buyinfor">
+                                        <ul>
+                                            <li class="buyinfor-top">
+                                                <p class="row1">名称</p>
+                                                <p class="row2">门店价</p>
+                                                <p class="row3">团购价</p>
+                                                <p class="row4">兑换方式</p>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="fn-clear">
+                                    <div class=" product-img" style="background: url(res/img/img.png) no-repeat center;background-size: cover;"></div>
+                                    <ul class="product-infor">
+                                        <li class="infor-title">
+                                            <h5>云崖寺</h5>
+                                        </li>
+                                        <li class="infor-star">
+                                            <span>9.7分</span>
+                                            <div class="star-box  fn-clear">
+                                                <em class="color"></em>
+                                                <em class="color"></em>
+                                                <em class="color"></em>
+                                                <em class=""></em>
+                                                <em class=""></em>
+                                            </div>
+                                        </li>
+                                        <li class="infor-tips">
+                                            <span>地道烤鱼</span>
+                                            <span>聚会唱歌</span>
+                                        </li>
+                                        <li class="infor-adderss">
+                                            <p>地址：平凉市庄浪县韩店镇石桥</p>
+                                        </li>
+                                        <li class="infor-talk">
+                                            <p>月销量：<i class="pink">7826</i> 份</p>
+                                            <p><i class="green">78290</i>人评价</p>
+                                        </li>
+                                    </ul>
+                                    <div class=" product-price">
+                                        <h4>人均消费</h4>
+                                        <h5><p class="red">¥ <span>60.0</span></p>起</h5>
+                                        <a href="门票详情.html">查看详情</a>
+                                    </div>
+                                    <div class=" product-buy">
+                                        <span>该商家有<em>4</em>个相关团购：</span>
+                                        <a>展开团购<i></i></a>
+                                    </div>
+                                    <div class=" product-buyinfor">
+                                        <ul>
+                                            <li class="buyinfor-top">
+                                                <p class="row1">名称</p>
+                                                <p class="row2">门店价</p>
+                                                <p class="row3">团购价</p>
+                                                <p class="row4">兑换方式</p>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="fn-clear">
+                                    <div class=" product-img" style="background: url(res/img/img.png) no-repeat center;background-size: cover;"></div>
+                                    <ul class="product-infor">
+                                        <li class="infor-title">
+                                            <h5>云崖寺</h5>
+                                        </li>
+                                        <li class="infor-star">
+                                            <span>9.7分</span>
+                                            <div class="star-box  fn-clear">
+                                                <em class="color"></em>
+                                                <em class="color"></em>
+                                                <em class="color"></em>
+                                                <em class=""></em>
+                                                <em class=""></em>
+                                            </div>
+                                        </li>
+                                        <li class="infor-tips">
+                                            <span>地道烤鱼</span>
+                                            <span>聚会唱歌</span>
+                                        </li>
+                                        <li class="infor-adderss">
+                                            <p>地址：平凉市庄浪县韩店镇石桥</p>
+                                        </li>
+                                        <li class="infor-talk">
+                                            <p>月销量：<i class="pink">7826</i> 份</p>
+                                            <p><i class="green">78290</i>人评价</p>
+                                        </li>
+                                    </ul>
+                                    <div class=" product-price">
+                                        <h4>人均消费</h4>
+                                        <h5><p class="red">¥ <span>60.0</span></p>起</h5>
+                                       <a href="门票详情.html">查看详情</a>
+                                    </div>
+                                    <div class=" product-buy">
+                                        <span>该商家有<em>4</em>个相关团购：</span>
+                                        <a>展开团购<i></i></a>
+                                    </div>
+                                    <div class=" product-buyinfor">
+                                        <ul>
+                                            <li class="buyinfor-top">
+                                                <p class="row1">名称</p>
+                                                <p class="row2">门店价</p>
+                                                <p class="row3">团购价</p>
+                                                <p class="row4">兑换方式</p>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                            <li class="buyinfor-li">
+                                                <p class="row1">2-4人烤鱼套餐（截止到2017.04.03）</p>
+                                                <p class="row2">¥ 153</p>
+                                                <p class="row3">¥99</p>
+                                                <p class="row4">二维码</p><a class="row5">立即抢购</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pageBox">
+                            <a href="javascript:void(0);" class="prevBtn">上一页<i></i></a>
+                            <a href="javascript:void(0);">1</a>
+                            <a href="javascript:void(0);" class="active">2</a>
+                            <a href="javascript:void(0);">3</a>
+                            <a href="javascript:void(0);">4</a>
+                            <a href="javascript:void(0);">6</a>
+                            <a href="javascript:void(0);">7</a>
+                            <a href="javascript:void(0);">8</a>
+                            <span>...</span>
+                            <a href="javascript:void(0);">12</a>
+                            <a href="javascript:void(0);" class="nextBtn">下一页<i></i></a>
+                            <p>到<input type="text" value="7">页</p>
+                            <a href="javascript:void(0);" class="submitBtn">确定</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="ours">
+                <div class="container">
+                    <div class="oursItem">
+                        <h2>关于我们</h2>
+                        <p>
+                            <a href="">公司简介</a>
+                            <i></i>
+                            <a href="#">崆通天下旅游护照</a>
+                        </p>
+                        <p>
+                            <a href="">联系我们</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>网站条款</h2>
+                        <p>
+                            <a href="">版权声明</a>
+                            <i></i>
+                            <a href="">会员预知</a>
+                        </p>
+                        <p>
+                            <a href="">免责声明</a>
+                            <i></i>
+                            <a href="">加盟须知</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>加盟合作</h2>
+                        <p>
+                            <a href="">分销联盟</a>
+                            <i></i>
+                            <a href="">代理合作</a>
+                        </p>
+                        <p>
+                            <a href="">保险代理</a>
+                            <i></i>
+                            <a href="">加盟服务</a>
+                        </p>
+                    </div>
+                    <div class="oursItem">
+                        <h2>商家服务</h2>
+                        <p>
+                            <a href="">广告业务</a>
+                            <i></i>
+                            <a href="">商家入驻</a>
+                        </p>
+                        <p>
+                            <a href="">商家帮助</a>
+                            <i></i>
+                            <a href="">服务说明</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="container">
+                    <h2>友情链接</h2>
+                    <p>
+                        <a href="#">国家旅游局</a><i>|</i>
+                        <a href="#">甘肃旅游网</a><i>|</i>
+                        <a href="#">兰州旅游网</a><i>|</i>
+                        <a href="#">崆峒山旅游网</a><i>|</i>
+                        <a href="#">康县旅游网</a><i>|</i>
+                        <a href="#">临夏市旅游局</a><i>|</i>
+                        <a href="#">庆阳市旅游局</a><i>|</i>
+                        <a href="#">天水市旅游局</a><i>|</i>
+                        <a href="#">甘南市旅游局</a><i>|</i>
+                        <a href="#">陇南市旅游局</a><i>|</i>
+                        <a href="#">张掖市旅游局</a><i>|</i>
+                        <a href="#">嘉峪关旅游局</a><i>|</i>
+                        <a href="#">敦煌旅游局</a><i>|</i>
+                        <a href="#">平凉旅游局</a><i>|</i>
+                    </p>
+                    <span>陇ICP备05001007号-1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        var map = new BMap.Map("traffic-map");
+        map.centerAndZoom(new BMap.Point(106.039136,35.196867), 12);
+        map.addControl(new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_RIGHT,
+            type: BMAP_NAVIGATION_CONTROL_ZOOM
+        }));
+
+        function ComplexCustomOverlay1(point, title, name) {
+            this._point = point;
+            this._title = title;
+            this._name = name;
+        }
+        ComplexCustomOverlay1.prototype = new BMap.Overlay();
+        ComplexCustomOverlay1.prototype.initialize = function(map) {
+            this._map = map;
+            var wrap = this._wrap = document.createElement("div");
+            wrap.className = "position-wrap";
+            var box = document.createElement("div");
+            box.className = "rompt-box";
+            wrap.appendChild(box);
+
+            var name = document.createElement("span");
+            name.className = "stat-name";
+            name.appendChild(document.createTextNode(this._title));
+            box.appendChild(name);
+
+            var address = document.createElement("p");
+            address.className = "stat-address";
+            address.appendChild(document.createTextNode("地址：" + this._name));
+            box.appendChild(address);
+
+            map.getPanes().labelPane.appendChild(wrap);
+            return wrap;
+        };
+        ComplexCustomOverlay1.prototype.draw = function() {
+            var map = this._map;
+            var pixel = map.pointToOverlayPixel(this._point);
+            this._wrap.style.left = pixel.x - 40 + "px";
+            this._wrap.style.top = pixel.y - 48 + "px";
+        };
+
+        function addPoint1(lon, lat, title, name) {
+            var pt = new BMap.Point(lon, lat);
+            var myIcon = new BMap.Icon("res/img/map-icon.png", new BMap.Size(43, 43));
+            var marker = new BMap.Marker(pt, {
+                icon: myIcon
+            });
+            map.addOverlay(marker);
+
+            var myCompOverlay = new ComplexCustomOverlay1(pt, title,name);
+            map.addOverlay(myCompOverlay);
+
+        }
+        var data = [{
+            "lon": "103.885855",
+            "lat": "36.060289",
+            "title": "1",
+            "name": "万达文华酒店"
+        }]
+
+        for (var i = 0; i < data.length; i++) {
+            addPoint1(data[i].lon, data[i].lat, data[i].title, data[i].name);
+        }
+
+        // 点击放大的地图
+        var map = new BMap.Map("en-large");
+        map.centerAndZoom(new BMap.Point(103.838392,36.070113), 12);
+        map.addControl(new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_RIGHT,
+            type: BMAP_NAVIGATION_CONTROL_ZOOM
+        }));
+
+        function ComplexCustomOverlay2(point, number) {
+            this._point = point;
+            this._number = number;
+        }
+        ComplexCustomOverlay2.prototype = new BMap.Overlay();
+        ComplexCustomOverlay2.prototype.initialize = function(map) {
+            this._map = map;
+            var wrap = this._wrap = document.createElement("div");
+            wrap.className = "big-icon-wrap";
+
+            var box = document.createElement("div");
+            box.className = "big-icon-box";
+            wrap.appendChild(box);
+
+            var name = document.createElement("span");
+            name.className = "big-icon-numb";
+            name.appendChild(document.createTextNode(this._number));
+            box.appendChild(name);
+
+
+            map.getPanes().labelPane.appendChild(wrap);
+            return wrap;
+        };
+        ComplexCustomOverlay2.prototype.draw = function() {
+            var map = this._map;
+            var pixel = map.pointToOverlayPixel(this._point);
+            this._wrap.style.left = pixel.x - 40 + "px";
+            this._wrap.style.top = pixel.y - 48 + "px";
+        };
+
+        function addPoint(lon, lat, number) {
+            var pt = new BMap.Point(lon, lat);
+            var myIcon = new BMap.Icon();
+            var marker = new BMap.Marker(pt, {
+                icon: myIcon
+            });
+            map.addOverlay(marker);
+
+            var myCompOverlay = new ComplexCustomOverlay2(pt, number);
+            map.addOverlay(myCompOverlay);
+
+        }
+        var data = [{
+            "lon": "103.877487",
+            "lat": "36.066378",
+            "number": "12"
+        },
+            {
+                "lon": "103.783775",
+                "lat": "36.075714",
+                "number": "9"
+            },
+            {
+                "lon": "103.808497",
+                "lat": "36.035564",
+                "number": "10"
+            },
+            {
+                "lon": "103.91888",
+                "lat": "36.036965",
+                "number": "9"
+            }]
+
+        for (var i = 0; i < data.length; i++) {
+            addPoint(data[i].lon, data[i].lat, data[i].number);
+        }
+    })
+
+</script>
+</html>

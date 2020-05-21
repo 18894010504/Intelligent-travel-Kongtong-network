@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/lib/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="res/lib/placeChoose/address.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/index.css">
+    <link rel="stylesheet" href="res/lib/stylesheets/eco.css">
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="res/lib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="res/lib/bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="res/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="res/lib/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="res/lib/placeChoose/address.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=D4739134efb9184fccbaec0ecf825c15"></script>
+    <script src="res/js/index.js"></script>
+    <title>订单详情</title>
+</head>
+<body>
+<div class="wraper bgc">
+    <div class="kts_index_header">
+        <div class="container_new">
+            <p>
+                <a href="注册页面.html" class="kts_register">注册</a>
+                <a href="登录页面.html" class="kts_login">登录</a>
+            </p>
+            <div class="kts_menu">
+                <i></i>
+                <a href="index.html" class="kts_menu_item0 ts"></a>
+                <a href="门票列表.html" class="kts_menu_item1 ts"></a>
+                <a href="酒店列表.html" class="kts_menu_item2 ts"></a>
+                <a href="自由行列表.html" class="kts_menu_item3 ts"></a>
+                <a href="租车列表.html" class="kts_menu_item4 ts"></a>
+                <a href="餐饮列表.html" class="kts_menu_item5 ts"></a>
+                <a href="特产列表.html" class="kts_menu_item6 ts"></a>
+                <a href="娱乐列表.html" class="kts_menu_item7 ts"></a>
+                <a href="#" class="kts_menu_item8 ts"></a>
+            </div>
+        </div>
+    </div>
+    <div class="pay-box">
+        <div class="mbxBox">
+            您所在的位置：
+            <a href="#">首页</a>
+            <em>&gt;</em>
+            <a href="#">订单列表</a>
+            <em>&gt;</em>
+            <span>订单详情</span>
+        </div>
+        <div class="orderinfor01">
+            <p>订单信息</p>
+            <em>订单信息/收货人信息</em>
+        </div>
+        <div class="orderinfor02">
+            <p>订单信息</p>
+        </div>
+        <div class="orderinfor03">
+
+            <h5><p>订单名称</p>崆峒山苹果新鲜水果特产静宁红富士当季脆甜生鲜农产品5斤8个包邮</h5>
+            <p>预订日期</p>
+            <p class="datetime">2018-05-16 11:12:37</p>
+            <p class="numcode">订单号:20180513174336181444</p>
+            <h4><em>总金额 <i>¥</i></em> 166.00</h4>
+        </div>
+        <div class="orderinfor04 fn-clear">
+            <div class="orderinfor04-l">
+                <div class="step-picture">
+                    <span></span>
+                    <ul class="fn-clear">
+                        <li class="do">
+                            <span>1</span>
+                            <em></em>
+                            <p>待付款</p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <em></em>
+                            <p>已付款</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <em></em>
+                            <p>已确认</p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <em></em>
+                            <p>已成交</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li class="order04title">
+                        <p class="order-row1">产品名称</p>
+                        <p class="order-row4">价格</p>
+                        <p class="order-row5">使用日期</p>
+                        <p class="order-row6">份数</p>
+                        <p class="order-row7">合计金额</p>
+                    </li>
+                    <li class="order04content order04content-p">
+                        <p class="order-row1">崆峒山苹果新鲜水果特产静宁红富士当季脆甜生鲜农产品5斤8个包邮</p>
+                        <p class="order-row4">¥ 166.00</p>
+                        <p class="order-row5">2018-05-16</p>
+                        <p class="order-row6">1 份</p>
+                        <p class="order-row7">¥ 166.00</p>
+                    </li>
+                    <li class="order04content">
+                        <p class="order-row1">附加保险</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="orderinfor04-r">
+                <ul>
+                    <li><a href="javascript:;" onclick="showMask()">取消订单</a></li>
+                    <li><a>删除订单</a></li>
+                    <li><a>重发短信</a></li>
+                    <li><a>打印订单</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="orderinfor05">
+            <p>收货人信息</p>
+        </div>
+        <div class="orderinfor06">
+            <h3>收货人</h3>
+            <ul>
+                <li>
+                    <span>中文姓名</span>
+                    <p>史雄伟</p>
+                </li>
+                <li>
+                    <span>手机号码</span>
+                    <p>188****0504</p>
+                </li>
+                <li>
+                    <span>邮政编码</span>
+                    <p>744600</p>
+                </li>
+                <li>
+                    <span>收货地址</span>
+                    <p>甘肃省平凉市庄浪县水洛街道邮政巷</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="mask" class="mask">
+        <div class="mask-box">
+            <div class="mask-content">
+                <div class="mask-content1">
+                    <h5>取消订单</h5>
+                    <a href="javascript:;" onclick="hideMask()"></a>
+                </div>
+                <div class="mask-content2">
+                    <h5><span></span>经核实如未使用且符合退改规则，退货将于2-15个工作日退至您的支付账户。</h5>
+                    <h4>退款总额</h4>
+                </div>
+                <div class="mask-content3">
+                    <ul>
+                        <li>
+                            <a>
+                                <h5><span></span>崆峒山景区门票+古镇至中台单程车票（成人套票）</h5>
+                            </a>
+
+                            <p>1份</p>
+                            <em>￥98.00</em>
+                        </li>
+                        <li>
+                            <a>
+                                <h5 class="active"><span></span>安全意外保险</h5>
+                            </a>
+
+                            <p>1份</p>
+                            <em>￥3.00</em>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mask-content4">
+                    <div>
+                        <a class="yes" href="javascript:;" onclick="hidecontent()">取消订单</a>
+                        <a href="javascript:;" onclick="hideMask()">返回</a>
+                    </div>
+                </div>
+            </div>
+            <div class="orderover ">
+
+
+                <div class="mask-content1">
+                    <h5>取消订单</h5>
+                    <a href="javascript:;" onclick="hideMask()"></a>
+                </div>
+                <div class="orderover-bd">
+                    <h5><em></em>请耐心等待客服人员确定，谢谢！</h5>
+
+                    <p>2秒后页面将自动跳转到<a>订单列表页</a></p>
+                </div>
+            </div>
+            <div class="order-reason">
+                <div class="mask-content1">
+                    <h5>取消订单</h5>
+                    <a href="javascript:;" onclick="hideMask()"></a>
+                </div>
+                <div class="reason-choose">
+                    <h2>取消原因</h2>
+
+                    <div class="mask-content3">
+                        <ul class="fn-clear">
+                            <li>
+                                <a>
+                                    <h5><span></span>行程不确定</h5>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a>
+                                    <h5><span></span>价格原因</h5>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a>
+                                    <h5><span></span>信息错误重新预定</h5>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a>
+                                    <h5><span></span>重复预定</h5>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a>
+                                    <h5><span></span>预定流程不方便</h5>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a>
+                                    <h5><span></span>变更流程不方便</h5>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a>
+                                    <h5><span></span>其他原因</h5>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a>
+                                    <h5><span></span>不想去了</h5>
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="mask-content4">
+                        <div>
+                            <a class="yes" href="javascript:;" onclick="heidreason()">取消订单</a>
+                            <a href="javascript:;" onclick="hideMask()">返回</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="ours">
+            <div class="container">
+                <div class="oursItem">
+                    <h2>关于我们</h2>
+                    <p>
+                        <a href="">公司简介</a>
+                        <i></i>
+                        <a href="#">崆通天下旅游护照</a>
+                    </p>
+                    <p>
+                        <a href="">联系我们</a>
+                    </p>
+                </div>
+                <div class="oursItem">
+                    <h2>网站条款</h2>
+                    <p>
+                        <a href="">版权声明</a>
+                        <i></i>
+                        <a href="">会员预知</a>
+                    </p>
+                    <p>
+                        <a href="">免责声明</a>
+                        <i></i>
+                        <a href="">加盟须知</a>
+                    </p>
+                </div>
+                <div class="oursItem">
+                    <h2>加盟合作</h2>
+                    <p>
+                        <a href="">分销联盟</a>
+                        <i></i>
+                        <a href="">代理合作</a>
+                    </p>
+                    <p>
+                        <a href="">保险代理</a>
+                        <i></i>
+                        <a href="">加盟服务</a>
+                    </p>
+                </div>
+                <div class="oursItem">
+                    <h2>商家服务</h2>
+                    <p>
+                        <a href="">广告业务</a>
+                        <i></i>
+                        <a href="">商家入驻</a>
+                    </p>
+                    <p>
+                        <a href="">商家帮助</a>
+                        <i></i>
+                        <a href="">服务说明</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <div class="container">
+                <h2>友情链接</h2>
+                <p>
+                    <a href="#">国家旅游局</a><i>|</i>
+                    <a href="#">甘肃旅游网</a><i>|</i>
+                    <a href="#">兰州旅游网</a><i>|</i>
+                    <a href="#">崆峒山旅游网</a><i>|</i>
+                    <a href="#">康县旅游网</a><i>|</i>
+                    <a href="#">临夏市旅游局</a><i>|</i>
+                    <a href="#">庆阳市旅游局</a><i>|</i>
+                    <a href="#">天水市旅游局</a><i>|</i>
+                    <a href="#">甘南市旅游局</a><i>|</i>
+                    <a href="#">陇南市旅游局</a><i>|</i>
+                    <a href="#">张掖市旅游局</a><i>|</i>
+                    <a href="#">嘉峪关旅游局</a><i>|</i>
+                    <a href="#">敦煌旅游局</a><i>|</i>
+                    <a href="#">平凉旅游局</a><i>|</i>
+                </p>
+                <span>陇ICP备05001007号-1</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show().addClass('show');
+        $(".mask-content").hide();
+        $(".order-reason").show();
+    }
+    function hideMask() {
+        $("#mask").hide().removeClass('show');
+        $(".mask-content").hide();
+        $(".order-reason").hide();
+        $(".orderover").hide();
+    }
+    $(".mask-content3 a").click(function () {
+        if ($(this).children().hasClass('active')) {
+            $(this).children().removeClass('active');
+        }
+        else {
+            $(this).children().addClass('active');
+        }
+    });
+    function heidreason() {
+        $(".order-reason").hide();
+        $(".mask-content").show();
+    }
+    function hidecontent() {
+        $(".mask-content").hide();
+        $(".orderover").show();
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
